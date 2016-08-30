@@ -41,3 +41,17 @@ hr.styled {
 	height: 1px;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+.citygrouplabel {
+	background-color: #333;
+	color: #dedede;
+	font: 10pt Verdana, sans-serif;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+	border-left: solid 2px #777;
+}
+.citygrouptext {
+	background: transparent;
+	border: solid 1px #666;
+	color: #dedede;
+}
