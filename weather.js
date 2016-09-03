@@ -87,7 +87,7 @@ var loadGeo = function () {
         $(".loading").hide(0);
         $(".custominput").show(0);
     };
-    if (navigator.hasOwnProperty("geolocation")) {
+    if (navigator.geolocation) {
         //ask for geolocation, dim window
         navigator.geolocation.getCurrentPosition(function (position) {
             var lat = position.coords.latitude;
