@@ -79,6 +79,13 @@ var geoLoaded = function(geoData) : void {
     $("#temp").text(Math.round(temp * 10) / 10);
     celsius = !celsius;
   });
+  //default to celsius
+  if(!celsius){
+    $("#toggleUnits").html("&deg;C");
+    temp = convertBetweenCF(temp, "C");
+    $("#temp").text(Math.round(temp * 10) / 10);
+    celsius = true;
+  }
   $(".content").show(400);
   loadBackground(weatherCodes(current.item.condition.code));
 };
